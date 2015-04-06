@@ -1,0 +1,369 @@
+.layer {
+  position: absolute;
+}
+.section-calendar {
+  height: 1200px;
+  position: relative;
+  overflow: hidden;
+}
+.section-calendar .agenda {
+  padding: 52px 30px;
+  height: 600px;
+}
+.agenda-layer .agenda {
+  background-image: -moz-linear-gradient(top,  rgba(27,14,1,0.8) 0%, rgba(27,14,1,0.8) 100%); /* FF3.6+ */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(27,14,1,0.8)), color-stop(100%,rgba(27,14,1,0.8))); /* Chrome,Safari4+ */
+  background-image: -webkit-linear-gradient(top,  rgba(27,14,1,0.8) 0%,rgba(27,14,1,0.8) 100%); /* Chrome10+,Safari5.1+ */
+  background-image: -o-linear-gradient(top,  rgba(27,14,1,0.8) 0%,rgba(27,14,1,0.8) 100%); /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(top,  rgba(27,14,1,0.8) 0%,rgba(27,14,1,0.8) 100%); /* IE10+ */
+  background-image: linear-gradient(to bottom, rgba(27,14,1,0.8) 0%,rgba(27,14,1,0.8) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#804d3512', endColorstr='#803e2809',GradientType=0 ); /* IE6-9 */
+}
+.agenda-layer {
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.next-race, .last-race, .race-pic {
+  overflow: hidden;
+  height: 630px;
+  z-index: -1;
+}
+.last-race {
+  top: 612px;
+}
+.race-pic {
+  height: 388px;
+}
+
+.enduro-brand {
+  display: block;
+  position: absolute;
+  width: 400px;
+  left: 50%;
+  margin: 0 0 0 -200px;
+  top: 416px;
+  text-align: center;
+  z-index: 100;
+}
+.date-calendar {
+  display: block;
+  width: 70px;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.date-calendar span {
+  display: block;
+  padding: 4px;
+}
+.date-calendar span:first-child {
+  background: #8f0606;
+  color: white;
+  font-size: 18px;
+}
+.date-calendar span:last-child {
+  background: white;
+  color: black;
+  font-size: 24px;
+}
+.description a {
+  min-width: 114px;
+}
+.featured {
+  background-color: #001e29;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  padding: 20px;
+  box-shadow: 0 12px 40px rgba(0,0,0,.5);
+  width: 100%;
+  z-index: 10;
+  top: 492px;
+}
+.featured.stripped {
+  background-image:
+    linear-gradient(to bottom, rgba(0,30,41,.0) 0%,rgba(0,30,41,1) 100%),
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 25%,
+      rgba(255,255,255,.05) 25%,
+      rgba(255,255,255,.05) 50%,
+      transparent 50%
+    );
+    background-size: 300px 100%, 80px 80px;
+    background-repeat: repeat-x, repeat;
+    background-position: top left, bottom left;
+}
+
+.featured .calendar-event {
+  position: relative;
+  padding-left: 90px;
+  text-transform: uppercase;
+  min-width: 440px;
+}
+.featured .calendar-event .date-calendar {
+  position: absolute;
+  margin-left: -90px;
+}
+.featured .calendar-event h4 {
+  color: #fff200;
+  font-size: 22px;
+  margin: 5px 0 0;
+}
+.featured .calendar-event h3 {
+  color: #00adee;
+  font-size: 60px;
+  margin: 5px 0;
+}
+.featured .calendar-event h3 span {
+  font-size: 35px;
+  vertical-align: top;
+}
+.featured .description > * {
+  display: block;
+}
+.featured .description {
+  font-size: 20px;
+}
+.featured .description strong {
+  font-weight: normal;
+}
+.featured .description span {
+  font-weight: 300;
+}
+.featured .description a {
+  display: block;
+  position: absolute;
+  right: 0px;
+  margin-top: -20px;
+  text-transform: uppercase;
+  border-radius: 0;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 5px 20px;
+  right: 0;
+  margin-top: -70px;
+}
+.featured .description a:last-child {
+  margin-top: -26px;
+}
+.featured {
+  background-color: #001e29;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  padding: 20px;
+  box-shadow: 0 12px 40px rgba(0,0,0,.5);
+}
+.featured.stripped {
+  background-image:
+    linear-gradient(to bottom, rgba(0,30,41,.0) 0%,rgba(0,30,41,1) 100%),
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 25%,
+      rgba(255,255,255,.05) 25%,
+      rgba(255,255,255,.05) 50%,
+      transparent 50%
+    );
+    background-size: 300px 100%, 80px 80px;
+    background-repeat: repeat-x, repeat;
+    background-position: top left, bottom left;
+}
+.date-calendar span {
+  display: block;
+  padding: 4px;
+}
+.date-calendar span:first-child {
+  background: #8f0606;
+  color: white;
+  font-size: 18px;
+}
+.date-calendar span:last-child {
+  background: white;
+  color: black;
+  font-size: 24px;
+}
+.description a {
+  min-width: 114px;
+}
+.featured .calendar-event {
+  position: relative;
+  padding-left: 90px;
+  text-transform: uppercase;
+  min-width: 440px;
+}
+.featured .calendar-event .date-calendar {
+  position: absolute;
+  margin-left: -90px;
+}
+.featured .calendar-event h4 {
+  color: #fff200;
+  font-size: 22px;
+  margin: 5px 0 0;
+}
+.featured .calendar-event h3 {
+  color: #00adee;
+  font-size: 60px;
+  margin: 5px 0;
+}
+.featured .calendar-event h3 span {
+  font-size: 35px;
+  vertical-align: top;
+}
+.featured .description > * {
+  display: block;
+}
+.featured .description {
+  font-size: 20px;
+}
+.featured .description strong {
+  font-weight: normal;
+}
+.featured .description span {
+  font-weight: 300;
+}
+.featured .description a {
+  display: block;
+  position: absolute;
+  right: 0px;
+  margin-top: -20px;
+  text-transform: uppercase;
+  border-radius: 0;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 5px 20px;
+  right: 0;
+  margin-top: -70px;
+}
+.featured .description a:last-child {
+  margin-top: -26px;
+}
+.section-gallery {
+  background: #00adee;
+  background-image:
+    repeating-linear-gradient(
+      -45deg,
+      #00adee,
+      #00adee 25%,
+      rgba(255,255,255,.1) 25%,
+      rgba(255,255,255,.1) 50%,
+      transparent 50%
+    );
+  background-position: 50% 50%;
+  background-size: 80px 80px;
+  background-repeat: repeat;
+  box-sizing: border-box;
+  padding: 20px;
+  text-shadow: 0px 2px 4px rgba(0,0,0,.4);
+}
+.section-gallery [role="tabpanel"] {
+  text-transform: uppercase;
+  color: white;
+}
+.section-gallery > [role="tabpanel"]{
+  display: block;
+  float: left;
+}
+.section-gallery [role="tabpanel"] h2{
+  display: inline-block;
+  font-size: 40px;
+}
+.section-gallery [role="tabpanel"] ul{
+  display: inline-block;
+  margin: 0 20px;
+}
+.section-gallery > [role="tabpanel"] h2{
+  color: #f3e600;
+}
+.section-gallery .inline-brand {
+  margin-top:20px;
+}
+.section-gallery .nav-tabs {
+  border-bottom: 1px solid transparent;
+}
+.section-gallery .nav-tabs>li>a {
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  padding: 7px 30px;
+  border-radius: 0;
+  text-shadow: 0 0 0 transparent;
+  color: white;
+  background: #00a7e1;
+  box-shadow: 1px 1px 1px rgba(255,255,255,.3);
+  border: 1px solid transparent;
+}
+.section-gallery .nav-tabs>li.active>a, .section-gallery .nav-tabs>li.active>a:focus, .section-gallery .nav-tabs>li.active>a:hover{
+  background: #f3e600;
+  color: #00adee;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+.section-gallery .nav-tabs>li.disabled>a {
+  background: transparent;
+  box-shadow: none;
+  color: #0089cf;
+}
+.section-gallery .tab-pane .tab-pane {
+  max-width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.section-gallery .tab-pane .tab-pane img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.embedded-video {
+  width: 100%;
+  height: 900px;
+  border: none;
+}
+
+/*** Responsive ***/ /*WIP*/
+@media (max-width: 720px) {
+ .race-pic, .next-race, .last-race {
+  height: auto;
+ }
+ .agenda-layer, .enduro-brand.layer {
+  display: none !important;
+ }
+ .featured.layer {
+  top: 192px;
+ }
+ .last-race {
+  top: 548px;
+ }
+ .section-calendar {
+  height: 690px;
+ }
+ .footer-proximity {
+  display: none;
+ }
+ .featured .calendar-event {
+  padding: 0 !important;
+  clear: both;
+  float: none !important;
+  width: 100% !important;
+  min-width: inherit !important;
+ }
+ .featured .calendar-event:first-child {
+  margin-bottom: 30px;
+ }
+ .featured .calendar-event h3 {
+  font-size: 35px !important;
+ }
+ .featured .calendar-event .date-calendar, .featured .calendar-event .description, .featured .calendar-event .description .btn {
+  display: block !important;
+  position: relative !important;
+  margin: 0 !important;
+ }
+ .featured .calendar-event .date-calendar {
+  float: left;
+  margin-right: 20px !important;
+ }
+ .featured .calendar-event .date-calendar span {
+  font-size: 14px;
+  display: inline;
+ }
+}
