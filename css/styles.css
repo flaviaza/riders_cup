@@ -1,11 +1,11 @@
 @import '../css/homepage.css';
 body {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'BenchNine', sans-serif;
   font-weight: 300;
   background-color: #e6e6e6;
 }
 .main-content {
-  padding-top: 80px;
+  padding-top: 74px;
 }
 .wrapper {
   max-width: 2880px;
@@ -21,19 +21,6 @@ a {
 a:hover, a:focus {
   color: #f3e600;
 }
-.stripped {
-  background-image:
-    repeating-linear-gradient(
-      -45deg,
-      transparent,
-      transparent 25%,
-      rgba(255,255,255,.04) 25%,
-      rgba(255,255,255,.043) 50%,
-      transparent 50%
-    );
-  background-position: top left;
-  background-size: 80px 80px;
-}
 .full-width, .full-width img {
   display: block;
   width: 100vw;
@@ -46,6 +33,9 @@ a:hover, a:focus {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
   font-size: 16px;
+}
+.btn.active, .btn.focus, .btn:active, .btn:focus, .btn:hover, .open>.dropdown-toggle.btn {
+  border: 1px solid transparent;
 }
 .btn-hightlight {
   background-color: #f3e600;
@@ -67,6 +57,12 @@ header {
   text-transform: uppercase;
   box-shadow: 0 12px 40px rgba(0,0,0,.5);
 }
+header.navbar {
+  background-color: #009ed2;
+}
+header.navbar a {
+  color: white;
+}
 header .navbar-collapse.in {
   width: 100%;
 }
@@ -78,6 +74,9 @@ header .dropdown-menu a:not(.btn-inverse) {
 }
 header .navbar-header {
   margin: 5px;
+}
+header .navbar-header h1, header .navbar-header h2 {
+  display: none;
 }
 header .nav {
   margin: 14px 0px 0;
@@ -121,9 +120,9 @@ header.navbar .navbar-header *{
   color: #f3e600;
 }
 .nav>li>a.social-link{
-  background-color: #00aeef;
+  background-color: #f15a22;
   color: white;
-  text-shadow: 0px 2px 4px #0098db;
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.7);
 }
 header.navbar .nav>li a.special-link {
   color: #f3e600;
@@ -131,35 +130,11 @@ header.navbar .nav>li a.special-link {
 header.navbar .nav>li>a.special-link img {
   margin-top: -1px;
 }
-header.navbar.stripped {
-  background-image:
-    repeating-linear-gradient(
-      -45deg,
-      transparent,
-      transparent 25%,
-      rgba(255,255,255,.02) 25%,
-      rgba(255,255,255,.02) 50%,
-      transparent 50%
-    ),
-    linear-gradient(to bottom, #181818 0%,#1b1b1b 100%);
-  background-color: #181818;
-  background-size: 80px 80px, 100% 100%;
-}
 header .nav .dropdown-menu {
-  margin-top: 14px;
-  background: transparent;
-}
-header .open>.dropdown-menu:after {
-  display: block;
-  content: '\00a0';
-  position: absolute;
-  top: 0;
-  left: -100vw;
-  width: 200vw;
-  height: 105%;
-  background-color: rgba(0, 137, 207, 0.85);
-  z-index:-1;
-  box-shadow: 0 12px 40px rgba(0,0,0,.5);
+  margin-top: 16px;
+  background: rgba(0,0,0,.5);
+  padding: 20px;
+  border-radius: 0;
 }
 header .nav .dropdown-menu > ul {
   list-style: none;
@@ -176,14 +151,14 @@ header .nav .dropdown-menu .agenda{
   padding: 0;
 }
 header .agenda li, header .agenda li h3 {
-  color: #6dcff6;
+  color: #696969;
 }
 header .dropdown-menu.events {
   width: 100vw;
   left: inherit;
   right: 0;
   text-align: center;
-  margin-top: 0px;
+  margin-top: 7px;
 }
 header .dropdown-menu.events img{
   max-width: 100%;
@@ -306,6 +281,10 @@ header .dropdown-menu.contact a.fa {
 .agenda li.active p a {
   display: block;
 }
+.agenda a.btn-primary {
+  color: #4b4b4b;
+  background-color: #fff200;
+}
 .footer-proximity {
   display: block;
   position: fixed;
@@ -317,11 +296,21 @@ header .dropdown-menu.contact a.fa {
 .section-footer {
   min-height: 500px;
   width: 100%;
-  background: black;
+  background: #00adee;
+}
+.section-footer a {
+  color: #f15a22;
+}
+.section-footer .btn-hightlight {
+  color: #0089cf;
+}
+.section-footer a:hover, .section-footer a:active, .section-footer a:focus {
+  color: #fff200;
 }
 .section-footer .brand {
   max-height: 64px;
   margin-top: 12px;
+  margin-left: 15px;
   margin-bottom: 20px;
 }
 .section-footer .agenda {
@@ -335,17 +324,6 @@ header .dropdown-menu.contact a.fa {
   height: 500px;
 }
 .section-footer [class*="col-"]:hover {
-  background-image:
-    repeating-linear-gradient(
-      -45deg,
-      transparent,
-      transparent 25%,
-      rgba(255,255,255,.1) 25%,
-      rgba(255,255,255,.1) 50%,
-      transparent 50%
-    );
-  background-position: top left;
-  background-size: 80px 80px;
 }
 .section-footer .nav>li>a {
   padding: 10px 15px;
@@ -362,6 +340,18 @@ header .dropdown-menu.contact a.fa {
 .section-footer .sponsor img {
   display: block;
   margin: 0 auto;
+}
+.highlighted-col {
+  background-color: #f15a22;
+}
+.highlighted-col .agenda li, .highlighted-col .agenda li h3 {
+  color: #f8865b;
+}
+.highlighted-col .agenda li.active {
+  color: white;
+}
+.highlighted-col .agenda li.active h3 {
+  color: #fff200;
 }
 /*fix open shimano brand positioning...*/
 .section-footer .sponsor img[src*='open_shimano'] {
