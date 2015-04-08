@@ -297,6 +297,7 @@ header .dropdown-menu.contact a.fa {
   min-height: 500px;
   width: 100%;
   background: #00adee;
+  overflow: hidden;
 }
 .section-footer a {
   color: #f15a22;

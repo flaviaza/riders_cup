@@ -2,7 +2,7 @@
   position: absolute;
 }
 .section-calendar {
-  height: 882px;
+  height: 854px;
   position: relative;
   overflow: hidden;
 }
@@ -16,7 +16,7 @@
   z-index: -1;
 }
 .last-race {
-  top: 542px;
+  top: 514px;
 }
 .race-pic {
   height: 388px;
@@ -28,7 +28,7 @@
   width: 400px;
   left: 50%;
   margin: 0 0 0 -200px;
-  top: 340px;
+  top: 298px;
   text-align: center;
   z-index: 100;
 }
@@ -64,7 +64,7 @@
   box-shadow: 0 12px 40px rgba(0,0,0,.5);
   width: 100%;
   z-index: 10;
-  top: 374px;
+  top: 332px;
 }
 .featured .calendar-event {
   position: relative;
