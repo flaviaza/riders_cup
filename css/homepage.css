@@ -82,7 +82,7 @@
   font-size: 18px;
   margin: 5px 0 0;
 }
-.featured .calendar-event:last-child h4 {
+.featured .calendar-event:nth-child(2) h4 {
   color: #fff200;
 }
 .featured .calendar-event h3 {
